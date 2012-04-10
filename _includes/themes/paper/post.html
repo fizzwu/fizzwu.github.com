@@ -1,0 +1,9 @@
+<div class="page post">
+  <h2 class="title">
+      <a href="{{ page.url }}">{{ page.title }}</a>
+    </h2>
+    <div class="info">
+      <span>Posted at {{ page.date | date_to_string }}</span>
+    </div>
+  {{ content }}
+</div>

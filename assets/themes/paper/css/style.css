@@ -1,0 +1,154 @@
+/* overwrite some bootstrap styles */
+::selection {
+  background: #317fdf; /* Safari */
+  color: #fff;
+}
+::-moz-selection {
+  background: #317fdf; /* Firefox */
+  color: #fff;
+}
+
+a { 
+  text-decoration: none; 
+  color: #2365b6;
+  transition: color .2s linear; 
+  -webkit-transition: color .2s linear;
+  -moz-transition: color .2s linear;
+  -o-transition: color .2s linear;
+}
+a:hover{ 
+  text-decoration: none; 
+  color: #317fdf;
+}
+
+body{
+  background: #efefef;
+}
+
+
+/* header */
+#head-container{
+  height: 90px;
+  background: #252525;
+}
+
+#header{
+  width: 950px;
+  margin: 0 auto;
+  padding-top: 10px;
+  clear: both;
+  overflow: auto;
+}
+
+#logo{
+  float: left;
+  margin-left: 30px;
+}
+
+#logo h1{
+  margin: 0;
+  padding: 0;
+  color: #ddd;
+  font-weight: normal;
+  line-height: 70px;
+  font-size: 36px;
+}
+
+#nav-menu{
+  float: right;
+  margin-right: 30px;
+  list-style: none;
+  padding-top: 40px;
+}
+
+#nav-menu li{
+  float: left;
+  margin-right: 20px;
+}
+
+#nav-menu li a{
+  font-size: 16px;
+  color: #ddd;
+}
+
+
+/* body */
+#content{
+  padding: 20px 10px;
+}
+
+#main{
+  width: 950px;
+  margin: 0 auto;
+}
+
+.page{
+  background: #fff;
+  margin: 30px auto;
+  padding: 30px 70px;
+  width: 750px;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* footer */
+#footer{
+  height: 300px;
+  background: #252525;
+  border-top: 1px solid #444;
+}
+
+#footer .footer-wrapper{
+  width: 890px;
+  margin: 30px auto 0;
+}
+
+#footer .footer-wrapper .content{
+  overflow: auto;
+}
+
+#footer div.col{
+  float: left;
+  margin-right: 40px;
+}
+
+#footer h4{
+  color: #ddd;
+  font-size: 20px;
+  font-weight: normal;
+  border-bottom: 1px solid #353535;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+#footer ul{
+  margin-left: 15px;
+}
+
+#footer ul li{
+  line-height: 25px;
+  font-size: 15px;
+  color: #666;
+}
+
+#footer ul li a{
+  font-size: 15px;
+}
+
+#footer p.licence{
+  color: #666;
+  margin-top: 30px;
+}
+
+/* post */
+.post .info{
+  margin-bottom: 20px;
+}
+
+.post .info span{
+  color: #999;
+}
+
+
+
+
+

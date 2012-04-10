@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <meta name="author" content="{{ site.author.name }}">
+
+  <link rel="stylesheet" type="text/css" href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ ASSET_PATH }}/css/style.css">
+
+</head>
+<body>
+  <div id="wrapper">
+    <div id="head-container">
+      <div id="header">
+        <div id="logo">
+          <a href="{{ HOME_PATH }}"><h1>{{ site.title }}</h1></a>
+        </div>
+        <ul id="nav-menu">
+          {% assign pages_list = site.pages %}
+          {% assign group = 'navigation' %}
+          {% include JB/pages_list %}
+        </ul>
+      </div>
+    </div>
+    <div id="content">
+      <div id="main">
+        {{ content }}
+      </div>
+    </div>
+    <div id="footer">
+      <div class="footer-wrapper">
+        <div class="content">
+          <div class="col">
+            <h4>About</h4>
+            <ul>
+              <li class="contact"><span class="author fn n">{{ site.author.name }}</span> - <span class="fn email">{{ site.author.email }}</span></li>
+              <li class="github"><a href="http://github.com/{{ site.author.github }}/" rel="me">github.com/{{ site.author.github }}</a></li>
+              <li class="twitter"><a href="http://twitter.com/{{ site.author.twitter }}/" rel="me">twitter.com/{{ site.author.twitter }}</a></li>
+              <li class="weibo"><a href="http://weibo.com/{{ site.author.weibo }}" rel="me">weibo.com/{{ site.author.weibo }}</a></li>
+              <li class="rss"><a href="http://feeds.feedburner.com/{{ site.author.feedname }}">Subscribe to RSS Feed</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="licence">Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
