@@ -25,6 +25,13 @@ body{
   background: #efefef;
 }
 
+p{
+	margin: 1em 0;
+}
+
+h3, h4{
+  margin: 1.5em 0 0.5em;
+}
 
 /* header */
 #head-container{
