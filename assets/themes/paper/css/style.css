@@ -105,6 +105,10 @@ h3, h4{
   margin-top: 10px;
 }
 
+#disqus_thread{
+  margin-top: 70px;
+}
+
 /* footer */
 #footer{
   height: 300px;
