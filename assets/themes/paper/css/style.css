@@ -78,6 +78,10 @@ h3, h4{
   color: #ddd;
 }
 
+#nav-menu li a:hover{
+  color: #fff;
+}
+
 
 /* body */
 #content{
