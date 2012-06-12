@@ -26,12 +26,17 @@ body{
 }
 
 p{
-	margin: 1em 0;
+	margin: 12px 0;
+  font-family: 'Hiragino Sans GB', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+  color: #454545;
 }
 
 h3, h4{
   margin: 1.5em 0 0.5em;
 }
+
 
 /* header */
 #head-container{
