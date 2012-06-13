@@ -9,6 +9,18 @@
   {% for tag in page.tags %}
     <a class="tag" href="/tags.html/#{{ tag }}-ref">{{ tag }}</a>
   {% endfor %}
+  <ul class="pre-next-box">
+    {% if page.previous %}
+	    <li class="previous">
+	    	<a href="{{ page.previous.url }}">&larr; {{ page.previous.title }}</a>
+	    </li>
+    {% endif %}
+    {% if page.next %} 
+	    <li class="next">
+	    	<a href="{{ page.next.url }}" class="pull-right">{{ page.next.title }} &rarr;</a>
+	    </li>
+    {% endif %}   
+	</ul>
   
   {% include JB/comments %}
 </div>

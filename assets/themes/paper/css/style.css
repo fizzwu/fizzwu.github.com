@@ -245,4 +245,47 @@ a.tag:hover{
   margin-left: 10px;
 }
 
+.pre-next-box{
+  margin: 25px 0 0 0!important;
+  padding-top: 15px;
+  overflow: auto;
+  border-top: 1px solid #dedede;
+}
+
+.pre-next-box li{
+  list-style: none;
+}
+
+.pre-next-box li a{
+  font-size: 14px;
+}
+
+.pre-next-box .previous{
+  float: left;
+}
+
+.pre-next-box .next{
+  float: right;
+}
+
+.pagination{
+  margin: 30px;
+}
+
+.pagination span{
+  margin-right: 20px;
+}
+
+.pagination span a{
+  font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
 

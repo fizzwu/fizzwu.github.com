@@ -4,7 +4,7 @@ title: "Home"
 ---
 {% include JB/setup %}
 
-{% for post in site.posts %}
+{% for post in paginator.posts %}
   <div class="page">
     <h2 class="title">
       <a href="{{ post.url }}">{{ post.title }}</a>
@@ -20,14 +20,18 @@ title: "Home"
 {% endfor %}
 
 <div class="pagination">
-  <span class="previous">
-    {% if paginator.previous_page %}
-      <a href="/page{{ paginator.previous_page }}">&laquo; Previous</a>
-    {% endif %}
-  </span>
   <span class="next">
     {% if paginator.next_page %}
-      <a href="/page{{ paginator.next_page }}">Next &raquo;</a>
+      <a href="/page{{ paginator.next_page }}">&larr; Previous</a>
+    {% endif %}
+  </span>
+  <span class="previous">
+    {% if paginator.previous_page %}
+      {% if paginator.previous_page == 1 %}
+        <a href="/">Next &rarr;</a>
+      {% else %}
+        <a href="/page{{ paginator.previous_page }}">Next &rarr;</a>
+      {% endif %}
     {% endif %}
   </span>
 </div>
