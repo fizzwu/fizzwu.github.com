@@ -281,8 +281,35 @@ a.tag:hover{
 }
 
 
+/*archive*/
+.archive h2{
+  
+}
 
+.archive h3{
+  background: #e5f0ff;
+  padding-left: 25px;
+  color: #666;
+}
 
+.archive ul{
+  list-style: none;
+  margin: 0;
+}
+
+.archive ul li{
+  padding-left: 25px;
+  line-height: 35px;
+  border-bottom: 1px solid #dedede;
+}
+
+.archive ul li span, .archive ul li a{
+  font-size: 14px;
+}
+
+.archive ul li span{
+  color: #555;
+}
 
 
 
