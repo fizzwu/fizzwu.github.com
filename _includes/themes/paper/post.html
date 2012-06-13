@@ -6,6 +6,9 @@
       <span>Posted at {{ page.date | date_to_string }}</span>
     </div>
   {{ content }}
+  {% for tag in page.tags %}
+    <a class="tag" href="/tags.html/#{{ tag }}-ref">{{ tag }}</a>
+  {% endfor %}
   
   {% include JB/comments %}
 </div>

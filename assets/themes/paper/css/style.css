@@ -96,14 +96,6 @@ h3, h4{
   margin: 0 auto;
 }
 
-.page11{
-  background: #fff;
-  margin: 30px auto;
-  padding: 30px 70px;
-  width: 750px;
-  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.3);
-}
-
 .page{
   background: #fff;
   margin: 30px auto;
@@ -195,6 +187,24 @@ h3, h4{
 }
 
 /* tags */
+a.tag{
+  padding: 4px 5px;
+  margin-right: 5px;
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background: #999;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  transition: background .2s linear; 
+  -webkit-transition: background .2s linear;
+  -moz-transition: background .2s linear;
+}
+
+a.tag:hover{
+  background: #2365b6;
+}
+
 .tag_box{
   padding: 10px 0;
   margin: 0 0 20px 0;
