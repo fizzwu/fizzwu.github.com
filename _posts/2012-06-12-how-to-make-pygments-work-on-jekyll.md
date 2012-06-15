@@ -3,7 +3,7 @@ layout: post
 title: "How to make pygments work on jekyll"
 description: ""
 category: 
-tags: [jekyll]
+tags: [Jekyll]
 ---
 {% include JB/setup %}
 

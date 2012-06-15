@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "创建定时任务"
+title: "Rails创建定时任务"
 description: ""
 category: 
-tags: [Rails, gem, Linux ]
+tags: [Rails, Gem, Linux ]
 ---
 {% include JB/setup %}
 
@@ -65,6 +65,6 @@ task :my_task_by_params, [:arg1, :arg2] => :environment do |t, args|
 end
 {% endhighlight %}
 
-控制台执行`rake my_task_by_params[1, 2]`
+控制台执行`RAILS_ENV=production rake my_task_by_params[1, 2]`
 
 如果用的是zsh的话，这个rake命令可能会出问题，记得用noglob，[出处](http://www.scottw.com/zsh-rake-parameters)
