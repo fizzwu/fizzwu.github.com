@@ -1,7 +1,7 @@
 ---
 layout: nil
 ---
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>Fizz's Blog</title>
@@ -17,7 +17,7 @@ layout: nil
  {% for post in site.posts %}
  <entry>
    <title>{{ post.title }}</title>
-   <link href="http://recursive-design.com{{ post.url }}"/>
+   <link href="http://fizzwu.im{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
    <id>http://fizzwu.im{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
