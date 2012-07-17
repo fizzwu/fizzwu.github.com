@@ -49,7 +49,7 @@ every '0 4 1 * *' do
 end
 {% endhighlight %}
 
-在控制台直接执行whenver，得到原生的crontab line，放到部署应用的机器上
+在控制台直接执行whenver，得到原生的crontab line，放到部署应用的机器上
 
 
 ### 关于rake task传参
