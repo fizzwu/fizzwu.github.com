@@ -216,6 +216,7 @@ a.tag:hover{
 .tag_box li{
   list-style: none;
   display: inline-block;
+  margin: 0 0 20px 0;
 }
 
 .tag_box li a{
