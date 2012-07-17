@@ -4,8 +4,8 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>Recursive</title>
- <link href="http://fizzwu.im/feed/" rel="self"/>
+ <title>Fizz's Blog</title>
+ <link href="http://fizzwu.im/feed/index.xml" rel="self"/>
  <link href="http://fizzwu.im/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
  <id>http://fizzwu.im/</id>
