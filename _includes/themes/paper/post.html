@@ -1,14 +1,15 @@
 <div class="page post">
   <h2 class="title">
-      <a href="{{ page.url }}">{{ page.title }}</a>
-    </h2>
-    <div class="info">
-      <span>Posted at {{ page.date | date_to_string }}</span>
-    </div>
-  {{ content }}
+    <a href="{{ page.url }}">{{ page.title }}</a>
+    <span>{{ page.date | date: "%b %e" }}</span>
+  </h2>
+  <ul class="post-tags">
   {% for tag in page.tags %}
-    <a class="tag" href="/tags.html/#{{ tag }}-ref">{{ tag }}</a>
+    <li><a class="tag" href="/tags.html/#{{ tag }}-ref">{{ tag }}</a></li>
   {% endfor %}
+  </ul>
+  {{ content }}
+  
   <ul class="pre-next-box">
     {% if page.previous %}
 	    <li class="previous">
