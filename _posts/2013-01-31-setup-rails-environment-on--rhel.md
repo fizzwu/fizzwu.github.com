@@ -13,7 +13,7 @@ tags: [Linux, Deploy]
 
 `gem install libxml-ruby` 出错，需要安装libxml2-devel, `sudo yum install libxml2-devel`
 
-`gem install mysql2` 出错，安装mysql-devel, `sudo yun install mysql-devel`
+`gem install mysql2` 出错，安装mysql-devel, `sudo yum install mysql-devel`
 
 ### Installation
 
