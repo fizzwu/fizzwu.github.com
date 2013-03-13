@@ -9,6 +9,16 @@ tags: [Linux, Deploy]
 
 这次应用搬家公司给的机器是RHEL，从来没在这上面装过Rails环境，和Mac，Ubuntu有一些不同，遇到的坑记一下。
 
+### RVM
+
+rvm有很多package，openssl, libyaml这种，如果没装这些东西直接装Ruby的话，后面要装别的依赖这些包的东西的话，要重新装Ruby，麻烦的很，所以先装掉
+{% highlight bash %}
+$ rvm get head
+$ rvm pkg remove
+$ rvm requirements run
+$ rvm pkg install openssl libyaml
+{% endhighlight %}
+
 ### Errors:
 
 `gem install libxml-ruby` 出错，需要安装libxml2-devel, `sudo yum install libxml2-devel`

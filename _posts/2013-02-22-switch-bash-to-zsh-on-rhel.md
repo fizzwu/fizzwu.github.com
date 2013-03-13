@@ -3,7 +3,7 @@ layout: post
 title: "Switch bash to zsh on RHEL"
 description: ""
 category: 
-tags: []
+tags: [Linux, shell]
 ---
 {% include JB/setup %}
 
