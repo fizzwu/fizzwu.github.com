@@ -30,6 +30,7 @@ class User
 end
 {% endhighlight %}
 
+
 如果你想用`post.name`来返回文章作者的名字的话，就需要在`Post`model里加入如下定义
 
 {% highlight ruby %}
@@ -41,6 +42,8 @@ class Post
   end
 end
 {% endhighlight %}
+
+<!--break-->
 
 但是如果用`delegate`方法的话
 

@@ -15,7 +15,10 @@ title: "Home"
       <li><a class="tag" href="/tags.html/#{{ tag }}-ref">{{ tag }}</a></li>
     {% endfor %}
     </ul>
-    {{ post.content }}
+    {{ post.content | split:'<!--break-->' | first }}
+    {% if post.content contains '<!--break-->' %}
+      <div class="readmore"><a href="{{ post.url }}">More...</a></div>
+    {% endif %}
   </div>
 {% endfor %}
 
